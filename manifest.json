@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Super UVEG",
+  "version": "1.0",
+  "description": "Por una mejor UVEG",
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": ["https://*.uveg.edu.mx/*"]
+    }
+  ],
+  "permissions": ["tabs", "storage"]
+}
