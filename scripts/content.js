@@ -1,12 +1,11 @@
-window.onload = function () {
-  let elements = document.querySelectorAll(
-    "div.modal-footer > button.btn.btn-default"
-  );
-  elements.forEach((e) => {
-    e.click();
-  });
+import * as modals from "./modals.js";
 
-  console.log("Modals cerrados");
+modals.setIntervalX(
+  function () {
+    modals.searchAndCloseModals();
+  },
+  500,
+  10
+);
 
-};
-
+alert(chrome.runtime.getURL('scripts/content.js'));
