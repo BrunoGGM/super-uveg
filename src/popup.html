@@ -3,18 +3,107 @@
   <head>
     <link rel="stylesheet" href="popup.css" />
     <title>Super UVEG</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <style>
       body {
-        height: 300px; /* popup max height is 600px */
-        width: 300px; /* popup max width is 800px */
+        height: 450px; /* popup max height is 600px */
+        width: 350px; /* popup max width is 800px */
       }
     </style>
   </head>
   <body>
-    <div class="container h-full">
-      <div class="flex flex-col justify-center p-6">
-        <h1 class="text-3xl font-bold">Super UVEG</h1>
-        <p class="mt-1 text-gray-500">Hola Koala!</p>
+    <div class="container h-full bg-slate-800 text-white p-4">
+      <div class="flex flex-col justify-center">
+        <h1 class="text-lg font-bold text-blue-600">
+          <span id="studentName" class="text-red-400">Estudiante</span> esto es
+          Super UVEG
+        </h1>
+        <div class="mt-2">
+          <p class="mt-1 mb-2">Configuración de la extensión</p>
+          <div id="switches">
+            <label
+              for="autoCloseModalsSwitch"
+              class="inline-flex relative items-center mb-5 cursor-pointer"
+            >
+              <input
+                type="checkbox"
+                value=""
+                class="sr-only peer"
+                id="autoCloseModalsSwitch"
+              />
+              <div
+                class="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+              ></div>
+              <span class="ml-3 text-sm font-medium">Cerrar modals</span>
+            </label>
+
+            <label
+              for="darkThemeSwitch"
+              class="inline-flex relative items-center mb-5 cursor-pointer"
+            >
+              <input
+                type="checkbox"
+                value=""
+                class="sr-only peer"
+                id="darkThemeSwitch"
+              />
+              <div
+                class="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+              ></div>
+              <span class="ml-3 text-sm font-medium"
+                >Tema oscuro
+                <span class="text-red-400">(experimental)</span></span
+              >
+            </label>
+
+            <label
+              for="evaluationSwitch"
+              class="inline-flex relative items-center mb-5 cursor-pointer"
+            >
+              <input
+                type="checkbox"
+                value=""
+                class="sr-only peer"
+                id="evaluationSwitch"
+                disabled
+              />
+              <div
+                class="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+              ></div>
+              <span class="ml-3 text-sm font-medium"
+                >Evaluar asesor y tutor
+                <span class="text-red-400">(próximamente)</span></span
+              >
+            </label>
+
+            <label
+              for="virtualPetSwitch"
+              class="inline-flex relative items-center mb-5 cursor-pointer"
+            >
+              <input
+                type="checkbox"
+                value=""
+                class="sr-only peer"
+                id="virtualPetSwitch"
+                disabled
+              />
+              <div
+                class="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+              ></div>
+              <span class="ml-3 text-sm font-medium"
+                >Mascota virtual
+                <span class="text-red-400">(próximamente)</span></span
+              >
+            </label>
+          </div>
+        </div>
+
+        <div class="su-footer">
+          <p class="mt-1 mb-2">
+            Creado por
+            <span class="text-blue-400 hover:underline">Bruno Gómez</span>
+          </p>
+        </div>
       </div>
     </div>
 

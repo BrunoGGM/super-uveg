@@ -1,0 +1,62 @@
+body {
+  background: #3a335e !important;
+}
+
+body:before {
+  background: #3a335e !important;
+}
+
+.nav > li > a > img {
+  width: 36px !important;
+  height: 36px !important;
+  padding: 5px !important;
+}
+
+.page-sidebar.sidebar-fixed {
+  background: #1d1a2e !important;
+}
+
+.page-sidebar.sidebar-fixed:before {
+  background: #1d1a2e !important;
+}
+
+.page-sidebar .sidebar-menu a {
+  height: 42px !important;
+  color: #eeffff !important;
+}
+
+.page-sidebar .sidebar-menu > li > a {
+  border-top: 1px solid #363636 !important;
+}
+
+.page-sidebar .sidebar-menu > li > a:hover {
+  border-color: #f3f3f3 !important;
+  background-color: #282d36 !important;
+  color: white !important;
+}
+
+.page-sidebar.menu-compact .sidebar-menu > li > a .menu-text {
+  background-color: #1d1a2e !important;
+}
+
+.page-body {
+  background: #3a335e !important;
+}
+
+.databox {
+  color: #eeffff !important;
+}
+
+.databox .bg-white {
+  background-color: #1d1a2e !important;
+}
+
+.databox .carbon {
+  color: #eeffff !important;
+}
+
+.databox .sonic-silver {
+  color: #eeffff !important;
+}
+
+

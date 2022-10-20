@@ -36,6 +36,7 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         { from: './src/assets', to: 'assets' },
+        { from: './src/styles', to: 'styles' },
         { from: './src/manifest.json' },
         { from: './src/popup.html' },
       ],

@@ -1,0 +1,22 @@
+export function eventListenerSwitches() {
+  let autoCloseModalsSwitch = document.getElementById("autoCloseModalsSwitch");
+  let darkThemeSwitch = document.getElementById("darkThemeSwitch");
+
+  autoCloseModalsSwitch.addEventListener("change", function () {
+    if (this.checked) {
+      chrome.storage.sync.set({ autoCloseModals: true });
+    } else {
+      chrome.storage.sync.set({ autoCloseModals: false });
+    }
+  });
+
+  darkThemeSwitch.addEventListener("change", async function () {
+    if (this.checked) {
+      chrome.storage.sync.set({ darkTheme: true });
+      chrome.runtime.sendMessage("addDarkTheme");
+    } else {
+      chrome.storage.sync.set({ darkTheme: false });
+      chrome.runtime.sendMessage("removeDarkTheme");
+    }
+  });
+}
