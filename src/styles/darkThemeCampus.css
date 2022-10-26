@@ -39,8 +39,27 @@ body:before {
   background-color: #1d1a2e !important;
 }
 
+.page-header {
+  background: #1d1a2e !important;
+}
+
+.page-header .header-title h1 {
+  color: #ffffff;
+}
 .page-body {
   background: #3a335e !important;
+}
+
+.page-breadcrumbs {
+  background: #1d1a2e !important;
+}
+
+.breadcrumb {
+  color: #fff !important;
+}
+
+.breadcrumb > li > a {
+  color: #ffffff !important;
 }
 
 .databox {
@@ -59,4 +78,45 @@ body:before {
   color: #eeffff !important;
 }
 
+.widget-header {
+  background: #1d1a2e !important;
+}
 
+.tickets-container {
+  background-color: #130d34 !important;
+}
+
+.tickets-container .tickets-list .ticket-item {
+  background-color: #130d34 !important;
+  border: 1px solid white !important;
+}
+
+.tickets-container .tickets-list .ticket-item .ticket-time .time {
+  color: #fff !important;
+}
+
+.tickets-container .tickets-list .ticket-item .ticket-type .type {
+  color: #fff !important;
+}
+
+.nav-tabs {
+  background-color: #1d1a2e !important;
+}
+
+.nav-tabs > li > a,
+.nav-tabs > li > a:hover,
+.nav-tabs > li > a:focus {
+  color: #ffffff !important;
+  background-color: #1d1a2e !important;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #ffffff !important;
+  background-color: #000000 !important;
+  border-top: 5px solid #8c0095 !important;
+}
+.tab-content {
+  background-color: #38325b !important;
+}
