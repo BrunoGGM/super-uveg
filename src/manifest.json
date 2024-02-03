@@ -1,7 +1,7 @@
 {
   "name": "Super UVEG",
   "description": "Por una mejor UVEG",
-  "version": "1.0",
+  "version": "1.1",
   "manifest_version": 3,
   "permissions": ["storage", "activeTab", "scripting"],
   "background": {
@@ -28,7 +28,7 @@
   "web_accessible_resources": [
     {
       "matches": ["https://*.uveg.edu.mx/*"],
-      "resources": ["styles/darkThemeCampus.css"]
+      "resources": ["styles/darkThemeCampus.css", "styles/evaluationModal.css"]
     }
   ],
   "host_permissions": ["https://*.uveg.edu.mx/*"],

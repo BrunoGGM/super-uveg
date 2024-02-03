@@ -1,6 +1,5 @@
 export function getStudentInfo() {
   let studentInfo = document.getElementById("dataApiMateriasRetos");
-
   if (studentInfo !== null) {
     studentInfo = JSON.parse(studentInfo.innerText);
     chrome.storage.sync.set({ studentInfo: studentInfo });

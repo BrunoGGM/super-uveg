@@ -1,4 +1,5 @@
-import {addDarkThemeToCampus, removeDarkThemeToCampus} from './scripts/dark-theme.js';
+import { addDarkThemeToCampus, removeDarkThemeToCampus } from './scripts/dark-theme.js';
+import { addCssBtnEvaluation } from './scripts/evaluation-modal.js';
 
 console.log("[BACKGROUND] Background initialized");
 
@@ -13,5 +14,9 @@ chrome.runtime.onMessage.addListener(async function (message) {
 
   if (message == "removeDarkTheme") {
     await removeDarkThemeToCampus();
+  }
+
+  if (message == "addCssBtnEvaluation") {
+    await addCssBtnEvaluation();
   }
 });
